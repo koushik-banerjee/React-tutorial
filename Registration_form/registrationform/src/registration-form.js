@@ -1,5 +1,5 @@
 // src/RegistrationForm.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const RegistrationForm = () => {
   // State variables for form fields
@@ -27,6 +27,18 @@ const RegistrationForm = () => {
     setName('');
     setAge('');
   };
+
+  // Effect to log changes to name and age
+  useEffect(() => {
+    console.log(`Name: ${name}, Age: ${age}`);
+  }, [name, age]); // Runs whenever name or age changes
+
+  // Effect to reset error message when user starts typing
+  useEffect(() => {
+    if (error) {
+      setError(''); // Clear error when user starts typing
+    }
+  }, [name, age]); // Runs whenever name or age changes
 
   return (
     <div>
