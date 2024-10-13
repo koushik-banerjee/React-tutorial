@@ -20,7 +20,7 @@ function Video({ id, title, channel = "kbshorts", views, time, verified }) {
         <div className="channel">
           {channel}
           {/* {verified ? "✅" : ""} */}
-          {verified && "✅"}
+          {verified && "✅"}  {/* using short circuting for checkmarks */}
 
         </div>
 

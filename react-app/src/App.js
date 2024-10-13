@@ -40,6 +40,7 @@ function App() {
       <div className="playlist">
         {
           obj.map(video=><Video
+            key={video.id}
             id={video.id}
             title={video.title}
             views={video.views}
