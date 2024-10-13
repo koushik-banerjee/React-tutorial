@@ -40,7 +40,7 @@ function App() {
       <div className="playlist">
         {
           obj.map(video=><Video
-            key={video.id}
+            key={video.id} 
             id={video.id}
             title={video.title}
             views={video.views}
@@ -49,7 +49,7 @@ function App() {
             verified={video.verified}
           ></Video>)
         }
-      
+      {/* 👉for generating a key in different webpages we can use for example:- crypto.randomUUID and for external library we can install uuid from npm */}
 
 
         {/* <Video {...obj}></Video>
