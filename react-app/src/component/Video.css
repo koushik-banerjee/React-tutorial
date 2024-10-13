@@ -1,0 +1,41 @@
+/* Video.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+  }
+  
+  .pic img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .channel {
+    display: flex;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .views {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 5px;
+  }
+  
+  .views span {
+    padding: 0 5px;
+  }
+  
