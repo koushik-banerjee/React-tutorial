@@ -1,22 +1,32 @@
-/* App.css */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #222;
-  color: white;
-  margin: 0;
-  padding: 20px;
-}
 
-div {
-  text-align: center;
-}
 
-h1 {
-  color: #fff;
-  font-size: 2rem;
-}
 
-.playlist{
+
+.playlist {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.play-button-wrapper {
+  display: flex; 
+  gap: 12px; 
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

@@ -1,11 +1,16 @@
 import React from 'react'
 
-function playbutton() {
+function PlayButton({message,name}) {
+
+  function handleClick() {
+    alert(message)
+  }
+
   return (
-    <div>
-      
-    </div>
+    <button onClick={handleClick}>{name}</button>   // event and event-handler function
+     
+    
   )
 }
 
-export default playbutton
+export default PlayButton
