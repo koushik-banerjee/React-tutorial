@@ -25,8 +25,9 @@ function App() {
       
       {/* Move the PlayButton outside of the video loop */}
       <div className="play-button-wrapper">
-        <PlayButton message="play" name="play"></PlayButton>
-        <PlayButton message="pause" name="pause"></PlayButton>
+        {/* here onSmash is function prop */}
+        <PlayButton message="play" onSmash={()=>console.log("Playyy")}>play</PlayButton>  
+        <PlayButton message="pause" onSmash={()=>alert("Pauseee")}>pause</PlayButton>
       </div>
     </>
   );

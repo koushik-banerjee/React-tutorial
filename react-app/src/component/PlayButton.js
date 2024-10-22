@@ -1,15 +1,13 @@
 import React from 'react'
 
-function PlayButton({message,name}) {
+function PlayButton({message,children,onSmash}) {
 
   function handleClick() {
-    alert(message)
+    onSmash();
   }
 
   return (
-    <button onClick={handleClick}>{name}</button>   // event and event-handler function
-     
-    
+    <button onClick={handleClick}>{children}</button>   // event and event-handler function
   )
 }
 
